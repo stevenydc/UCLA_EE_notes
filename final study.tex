@@ -1,0 +1,47 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+
+\author{Dichen Yin}
+\title{\Huge{Math 61}}
+\maketitle
+\newpage
+\part*{\Large{Formulas/Properties}}
+\paragraph{Euler's Formula.} (Proved in class by induction) This formula stats that the sum of number of vertices $|V|$ and the number of faces $|F|$ subtracted by the number  of edges $|E|$ is equal to 2.  $$|V|-|E|+|F| = 2$$
+
+\paragraph{Catalan's number.} Catalan's number is a number in the sequence define by 
+\[
+C_n = \binom{2n}{n} - \binom{2n}{n-1} = \frac{1}{n+1}\binom{2n}{n} =  \frac{(2n)!}{n! (n+1)!}
+\]
+It is often interpreted as the number of shortest grid walks on or above the diagonal of a $n \times n$ grid.
+\paragraph{Hand Shake Lemma}
+\paragraph{Trees and stuff} 
+\subparagraph{A Tree} is a graph that is connected but contains no cycle.
+
+
+If $T = (V,E)$ is a tree, then:
+\begin{enumerate} 
+\item $T$ is bipartite. Why? Wecause $G(V,E)$ is bipartite iff there is no odd cycle.\\
+Tree does not contain cycles  $\rightarrow$ no odd cycles $\rightarrow$ bipartite.
+\item (proved by induction):  $|V| = |E| + 1$
+\item there exist at least two vertices $v, w$ such that $\{v, w | deg(v) = deg(w) = 1\}$
+\end{enumerate}
+
+
+\paragraph{Cayley's formula} Number of spanning trees in $K_n = n^{n-2}$
+\subparagraph{Ex:} What is the probability of random n-1 edges chosen from $K_n$ forming a spanning tree in $K_n$? 
+\[
+\frac{n^{n-2}}{\binom{\binom{n}{2}}{n-1}}
+\]  
+
+\part*{\Large{Interesting Counting Examples}}
+\paragraph{$C_r$ in $K_{nn}$.}  
+\paragraph{\# of Hypercubes $H_n$ in $K_m$} 
+
+\[
+\frac{\binom{m}{2^n}2^n!}{2^nn!}
+\]
+
+\end{document}
